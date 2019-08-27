@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="dao.Book_Dao">    <!-- xml与接口dao关联 -->
+ <!-- <select id="select" resultType="model.Type" parameterType="java.lang.String">
+ select * from type ${_parameter}
+ </select> -->
+  <!-- <select id="selectById" resultType="model.Type" parameterType="int" >
+ select * from type where id=#{id}
+ </select> -->
+   <insert id="insert" parameterType="model.Book">
+ insert into book(name,sex,typeid) values(#{name},#{sex},#{typeid})
+ 
+ </insert> 
+ </mapper>
